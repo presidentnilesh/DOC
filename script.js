@@ -33,7 +33,26 @@
 // h1.remove();        // use to remove h1 
 
 
-let h1 = document.querySelector("h1");
-h1.textContent = "naraj tonahi ho na " ;
+// let h1 = document.querySelector("h1");   // selct the h1
+// h1.textContent = "naraj to nahi ho na " ;     // assign h1 = naraj to nahi hai na
 
-document.querySelector("div").appendChild(h1)
+// document.querySelector("div").append(h1);   // we can use appendChild or prependChild or prepend 
+
+
+// jss sha css badalna 
+// let h1 = document.querySelector("h1");  //it select the h1
+// h1.style.color = "red" ;    //change the text of gthe color to red 
+// h1.style.backgroundColor = "green" ;    //change the text of gthe color to red 
+// h1.style.fontFamily = "gilroy" ;    //change the text of gthe color to red 
+// h1.style.textTransform = "capitalize"
+// console.dir(h1) ;
+
+// let h1 = document.querySelector("h1");
+// h1.classList.remove("hulu")        // this code add all the properties of hulu that we have declared in the html (body) code 
+//h1.classList.toggle("hulu")       // toggle is use to add if class in not add , or it is use to remove if class is added
+
+// let buynow = document.querySelectorAll(".buy_now");  // in this we have createdd some buttons and just want to know more about the button's properties 
+// console.log(buynow);
+
+let heading = document.querySelector("#heading");
+console.log(heading)
