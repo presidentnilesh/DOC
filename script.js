@@ -18,7 +18,22 @@
 // console.log(a.getAttribute("href"));
 
 
-let a = document.querySelector("a");
-a.removeAttribute("href");
+// let a = document.querySelector("a");
+// a.removeAttribute("href");
 
 
+// create element 
+// append/prepend karo jaha bhi element chahiya waha 
+
+// let h1 = document.createElement("h1") ;         // use to create elemtent 
+// h1.textContent = "hello ji kaishe hai aap ";        // use to write whatever you want 
+// document.querySelector("body").append(h1)       // use to display in the body 
+
+// let h1 = document.querySelector("h1");      // it select the hq and allow to display in the screen 
+// h1.remove();        // use to remove h1 
+
+
+let h1 = document.querySelector("h1");
+h1.textContent = "naraj tonahi ho na " ;
+
+document.querySelector("div").appendChild(h1)
