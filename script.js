@@ -54,5 +54,41 @@
 // let buynow = document.querySelectorAll(".buy_now");  // in this we have createdd some buttons and just want to know more about the button's properties 
 // console.log(buynow);
 
-let heading = document.querySelector("#heading");
-console.log(heading)
+// let heading = document.querySelector("#heading") ;
+// heading.textContent = "Welcome to my home baby !" ;
+
+// let lis = document.querySelectorAll("li") ;
+// lis.forEach(function(val){
+//     console.log(val.textContent) ; 
+// })
+    // we can also use for loop for this loop
+
+// for(let i = 0 ; i<lis.length ; i++){
+//     console.log(lis[i].textContent)
+// }
+
+// let img = document.querySelector("img");
+// // console.log(img.src)     // methond 1 
+// console.log(img.getAttribute("src"));
+
+    // to set link or 
+// let a = document.querySelector("a");
+// a.href = "https://www.google.com"
+
+    // to set attribute or to set draging 
+// let div = document.querySelector("div");
+// div.setAttribute("title" , "hey i am doing .")
+
+//     // to remove disability from a button
+// let but = document.querySelector("button");
+// but.removeAttribute("disabled")
+
+// let ul = document.querySelector("ul");
+// let li = document.createElement("li");
+
+// li.textContent ="New task" ;
+// ul.appendChild(li) ;
+
+
+let img = document.createElement("img");
+img.setAttribute("src" , "")
