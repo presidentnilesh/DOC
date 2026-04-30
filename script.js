@@ -89,6 +89,18 @@
 // li.textContent ="New task" ;
 // ul.appendChild(li) ;
 
-
+    // use to insert the image and change its width
 let img = document.createElement("img");
-img.setAttribute("src" , "")
+img.setAttribute("src" , "https://cdn.pixabay.com/photo/2015/04/19/08/32/flower-729510_1280.jpg")
+img.classList.add("placeholder");
+document.querySelector("div").prepend(img)
+
+    // select the first item in the list and delete it from the DOM 
+let ul = document.querySelector("ul");
+let li = document.querySelector("li");
+
+ul.removeChild(li);
+
+// add a highlight class to every even itmes in a list 
+let l2 = document.querySelectorAll("ul li:nth-child(2n)")
+console.log(l2)
