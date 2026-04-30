@@ -104,3 +104,7 @@ ul.removeChild(li);
 // add a highlight class to every even itmes in a list 
 let l2 = document.querySelectorAll("ul li:nth-child(2n)")
 console.log(l2)
+
+l2.forEach(function(elem){
+    elem.classList.add("highlight")
+})
