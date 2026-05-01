@@ -90,21 +90,45 @@
 // ul.appendChild(li) ;
 
     // use to insert the image and change its width
-let img = document.createElement("img");
-img.setAttribute("src" , "https://cdn.pixabay.com/photo/2015/04/19/08/32/flower-729510_1280.jpg")
-img.classList.add("placeholder");
-document.querySelector("div").prepend(img)
+// let img = document.createElement("img");
+// img.setAttribute("src" , "https://cdn.pixabay.com/photo/2015/04/19/08/32/flower-729510_1280.jpg")
+// img.classList.add("placeholder");
+// document.querySelector("div").prepend(img)
 
-    // select the first item in the list and delete it from the DOM 
-let ul = document.querySelector("ul");
-let li = document.querySelector("li");
+//     // select the first item in the list and delete it from the DOM 
+// let ul = document.querySelector("ul");
+// let li = document.querySelector("li");
 
-ul.removeChild(li);
+// ul.removeChild(li);
 
-// add a highlight class to every even itmes in a list 
-let l2 = document.querySelectorAll("ul li:nth-child(2n)")
-console.log(l2)
+// // add a highlight class to every even itmes in a list 
+// let l2 = document.querySelectorAll("ul li:nth-child(2n)")
+// console.log(l2)
 
-l2.forEach(function(elem){
-    elem.classList.add("highlight")
+// l2.forEach(function(elem){
+//     elem.classList.add("highlight")
+// })
+
+    // change the fontsize of the text of every paragraph to 18px
+// let p = document.querySelectorAll("P");
+// p.forEach(function(elem){
+//     elem.style.fontSize = "18px" ;
+// })
+
+    // to change the colour of paragraph wehen we click on it and we use the function element because we want to change the color of paragraph when we click on it so we use the element in place of p because p is the collection of all the paragraph and we want to change the color of only that paragraph which we click on it so we use the element in place of p
+let p = document.querySelectorAll("p") ;
+p.forEach(function(elem){
+    elem.addEventListener("click" , function(){
+        elem.style.color = "red"
+    });
+
+});
+
+    // to change the color of heading when we click on it
+let h1 = document.querySelector("h1");
+h1.addEventListener("click", function(){    // here we did't use the function element because we want to change the color of h1 when we click on it so we use the h1 in place of element
+    h1.style.color = "yellow"
 })
+
+    // change the color when we double click any text 
+
