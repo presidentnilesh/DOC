@@ -115,20 +115,58 @@
 //     elem.style.fontSize = "18px" ;
 // })
 
-    // to change the colour of paragraph wehen we click on it and we use the function element because we want to change the color of paragraph when we click on it so we use the element in place of p because p is the collection of all the paragraph and we want to change the color of only that paragraph which we click on it so we use the element in place of p
-let p = document.querySelectorAll("p") ;
-p.forEach(function(elem){
-    elem.addEventListener("click" , function(){
-        elem.style.color = "red"
-    });
+    // to change the colour of paragraph wehen we click on it 
+// let p = document.querySelectorAll("p") ;
+// p.forEach(function(elem){
+//     elem.addEventListener("click" , function(){
+//         elem.style.color = "red"
+//     });
 
-});
+// });
 
     // to change the color of heading when we click on it
-let h1 = document.querySelector("h1");
-h1.addEventListener("click", function(){    // here we did't use the function element because we want to change the color of h1 when we click on it so we use the h1 in place of element
-    h1.style.color = "yellow"
-})
+// let h1 = document.querySelector("h1");
+// h1.addEventListener("click", function(){    
+//     h1.style.color = "yellow"
+// })
 
-    // change the color when we double click any text 
+    // change the color when we double click any text
 
+let p = document.querySelector("p")
+
+function dblclick(){
+    p.style.color = "orange"
+}
+
+p.addEventListener("dblclick" , dblclick);  // to add color when double clicked
+p.removeEventListener("dblclick" , dblclick);    // to remove the color when double clicked 
+// let input = document.querySelector("input");
+// input.addEventListener("input", function(evt){
+//     console.log(evt. data)
+// })
+
+// let input = document.querySelector("input");
+// input.addEventListener("input", function(dets){
+//     if(dets.data != null & dets.data != " "){   // to not print anything when space and delete button is pressed in keyboard 
+//     console.log(dets.data);
+//     }
+// })
+
+// let inp = document.querySelector("input")
+// inp.addEventListener("input" , function(nilu){
+//     console.log(nilu.data)
+// })
+
+// let sel = document.querySelector("select");
+// let device = document.querySelector("#device");
+
+// sel.addEventListener("change" , function(dets){
+//     device.textContent = `${dets.target.value} Device Selected` ;
+// });
+    // i wrote the same thing by myself 
+let sel = document.querySelector("select")
+let dev = document.querySelector("#device") // # is use to say that device is an id
+
+sel.addEventListener("change" , function(delt){
+    dev.textContent = `${delt.target.value} Device Selected`;
+}) ;
