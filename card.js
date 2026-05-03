@@ -39,3 +39,5 @@ form.addEventListener("submit" , function(dets){
         }
     })
 });
+
+// hello ma'am it's me and i am doing something to make the js. gpood and i want you to look after this and give me rating and some opportunities so that i can do good in my life .
