@@ -4,7 +4,7 @@ let inputs = document.querySelectorAll("input");
 let main = document.querySelector("#main");
 
 form.addEventListener("submit" , function(dets){
-    dets.preventDefault()
+    dets.preventDefault()   // preventdefault is use to npt reload the page when submit is clicked 
     
     let card = document.createElement("div");
     card.classList.add("card");
