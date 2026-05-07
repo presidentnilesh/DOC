@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card{
+            width: 350px;
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #444;
+        }
+
+        h2{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            background-color: #2b2b2b;
+            color: white;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: royalblue;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        small{
+            color: red;
+            display: none;
+        }
+
+       p{
+            color: green;
+            display: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+        label{
+            font-size: 15px;
+            display : block;
+            margin-bottom: 6px;
+            width : 100% ;
+        }
+       
+        #success{
+            text-align: center ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>User Verification</h2>
+
+        <form autocomplete="off" id="form">
+
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Enter username">
+            <small id="usernameError">Invalid Username</small>
+
+            <label  for="email">Email</label>
+            <input id="email" type="text" placeholder="Enter email">
+            <small id="emailError">Invalid Email</small>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password">
+            <small id="passwordError">Invalid password</small>
+
+            <button type="submit">Verify</button>
+
+            <p  id="success">Verification Successful ✅
+                <br>
+                thanks baby 
+            </p>
+
+        </form>
+    </div>
+
+    <script src="practice.js"></script>
+</body>
+</html>
