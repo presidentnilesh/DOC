@@ -85,7 +85,7 @@ function showUser(arr){
         card.appendChild(content);
 
         // Add Card to Body
-        document.body.appendChild(card);
+        document.querySelector(".cards").appendChild(card);
     
     });
 }
