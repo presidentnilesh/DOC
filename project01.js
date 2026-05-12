@@ -91,3 +91,18 @@ function showUser(arr){
 }
 
 showUser(user);
+
+let inp = document.querySelector(".inp");
+inp.addEventListener("input" , function(){
+    let newUser = user.filter((user) =>{
+        return user.name.startsWith(inp.value);
+    });
+    document.querySelector(".cards").innerHTML ="";
+
+    if ( newUser.length == 0){
+        document.querySelector(".cards").innerHTML = "<h2 class='not-found'>User Not Found</h2>" ;
+    }
+    else{
+        showUser(newUser);
+    }
+})

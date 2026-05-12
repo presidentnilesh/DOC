@@ -51,7 +51,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block code boemnvjjjekjkjdjjjkjdemederjjjrnfgkrikkfjmbmmrmm
+    display: block ;
 }
 
 .blurred-layer{
@@ -74,11 +74,33 @@ body{
         rgba(0,0,0,0)
     );
 
+
     -webkit-mask-image: linear-gradient(
         to top,
         rgba(0,0,0,1),
         rgba(0,0,0,0)
     );
+}
+
+.not-found{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.inp{
+    background-color: #111;
+    color: white;
+    border: 1px solid #444;
+    padding: 12px 18px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.inp::placeholder{
+    color: #aaa;
 }
 
 .content{
