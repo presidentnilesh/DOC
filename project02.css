@@ -122,7 +122,10 @@ button {
     align-items: center;
     gap: 8px;
 }
-
+.btn-primary:hover{
+    background-color: #48348a;
+    transform: scale(1.12) ;
+}
 .phone-icon {
     width: 14px;
     height: 14px;
@@ -131,6 +134,10 @@ button {
 .btn-secondary {
     background-color: #f0f2f8;
     color: #302e4d;
+}
+.btn-secondary:hover {
+    background-color: #8c8f9f;  
+    transform: scale(1.04); 
 }
 
 /* Right Color Dots */
@@ -275,4 +282,46 @@ button {
 
 .category-pill:hover {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.closeForm {
+    width: 100%;
+    padding :12px 22px ;
+    margin-top: 10px;
+    background-color: #8e3a3a;
+    border: none;
+    color: #ffe1e1;
+    font-weight: 500;
+    border-radius: 100px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+
+}
+
+.closeForm:hover {
+    background-color: #e63939;
+    transform: scale(1.02);
+}
+
+.createForm {
+    width: 100%;
+    padding :12px 22px ;
+    margin-top: 10px;
+    background-color: #455a34;
+    border: none;
+    color: #ffe1e1;
+    font-weight: 500;
+    border-radius: 100px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+
+}
+
+.createForm:hover {
+    background-color: #33a533;
+    transform: scale(1.02);
 }
